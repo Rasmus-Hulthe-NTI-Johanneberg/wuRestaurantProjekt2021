@@ -11,17 +11,17 @@
 
 .grid-wrapper{
     display: grid;
-    width: 100vw;
+    width: 99vw;
     height: 100vw;
     grid-template-areas: 
         "nv"
-        "dv"
-        "dv"
-        "dv"
-        "dv"
-        "dv"
-        "dv"
-        "ft";
+        "gw"
+        "gw"
+        "gw"
+        "gw"
+        "gw"
+        "gw"
+        "fw";
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(8,1fr);
 }
@@ -29,12 +29,23 @@
 
 
 .inner-grid-wrapper{
-    grid-area: dv;
+    grid-area: gw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
 }
 
+.ft-wrapper{
+    width: 99vw;
+    grid-area: fw;
+    display: grid;
+    grid-template-areas: 
+    "logo ft ft ft";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+
+}
 img {
     width: 100%;
     height: 100%;
@@ -43,16 +54,23 @@ img {
 }
 
 .nav{
+    
     grid-area: nv;
-    background:rgb(230,240,255);
+    background:rgb(210,220,235);
+}
+
+.logo{
+
+    grid-area: logo;
+    background: rgb(186,195,200);
 }
 
 
-.innerdiv2{
+.innerGrid2{
     background: rgb(207,218,223);
 }
 
-.innerdiv4{
+.innerGrid3{
     background: rgb(197,208,213);
 }
 
@@ -61,10 +79,74 @@ img {
     background: rgb(186,195,200);
 }
 
-.innerdiv2 h1{
+.innerGrid2 h1{
     text-align: center;
 }
 
+.innerGrid2 p{
+    text-align: center;
+}
+
+.innerGrid3 h1{
+    text-align: center;
+}
+
+.innerGrid3 p{
+    text-align: center;
+}
+
+
+
+.innnerGrid2Article1{
+    margin: 20px;
+}
+
+.innnerGrid2Article2{
+    margin: 20px;
+}
+
+.innnerGrid2Article3{
+    margin: 20px;
+}
+
+.innnerGrid2Article4{
+    margin: 20px;
+}
+
+.innnerGrid3Article1{
+    margin: 20px;
+}
+
+.innnerGrid3Article2{
+    margin: 20px;
+}
+.tid1{
+    margin: 20px;
+}
+
+.tid2{
+    margin: 20px;
+}
+
+.tid3{
+    margin: 20px;
+}
+
+.tid4{
+    margin: 20px;
+}
+
+.kontakt1{
+    margin: 20px;
+}
+
+.kontakt2{
+    margin: 20px;
+}
+
+.kontakt3{
+    margin: 20px;
+}
 /*Menu*/
 
 .menu{
@@ -103,46 +185,33 @@ img {
 
 
 
-.container:after, .container:before {
+  
+h3 {
+    position: relative;
+    font-weight: 700;
+    margin: .7em 0 1em 0;
+    }
+
+h3:after, h3:before {
     display: table;
     content: " ";
     line-height: 0;
     font-size: 0;
     clear: both;
-}
-  
-h3 {
-position: relative;
-font-weight: 700;
-margin: .7em 0 1em 0;
-}
-
-h3:after, h3:before {
-display: table;
-content: " ";
-line-height: 0;
-font-size: 0;
-clear: both;
-}
+    }
 
 h3 span {
-float: left;
-width: 10%;
-text-align: center;
-display: block;
-}
+    float: left;
+    width: 10%;
+    text-align: center;
+    display: block;
+    }
 
 h3 span:first-child {
     width: 75%;
     text-align: left;
     }
     
-    h3 .after {
-    width: 40%;
-    border-bottom: 2px dotted red;
-    margin-top: .8em;
-    }
-
 .price{
     text-align: right;
 }
